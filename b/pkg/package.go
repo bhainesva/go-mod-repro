@@ -1,7 +1,9 @@
 package pkg
 
-import "github.com/mhupman/go-zendesk/zendesk"
+import "github.com/nukosuke/go-zendesk/zendesk"
 
-func Exported() int {
-	return zendesk.ActionFieldStatus
+func Exported() string {
+	o := zendesk.Organization{}
+	// Only exists in the forked version
+	return o.ExternalID
 }
