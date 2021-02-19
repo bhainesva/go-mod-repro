@@ -30,7 +30,7 @@ Allow a to depend on b without needing to update either b or its transitive depe
 
 * Replacing all instances of `mhupman` (the fork) with the `nukosuke` (the parent) makes everything work, but in real life b needs to use the fork.
 
-* I assume udpating the `mhupman` fork to change the module path would also work, but I'm not sure that's practical either.
+* I assume updating the `mhupman` fork to change the module path would also work, but I'm not sure that's practical either.
 
 * I haven't tried manually updating the go.sum file, maybe that would help?
 
