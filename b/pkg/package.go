@@ -1,7 +1,7 @@
 package pkg
 
-import "github.com/mhupman/go-zendesk/zendesk"
+import "github.com/bhainesva/testmodule"
 
-func Exported() int {
-	return zendesk.ActionFieldStatus
+func Exported() string {
+	return testmodule.Get()
 }

@@ -2,10 +2,8 @@ module a
 
 go 1.16
 
-// Use local copy of non go-module dependency
 replace b => ../b
 
-require (
-	b v0.0.1
-	github.com/mhupman/go-zendesk v0.9.0 // indirect
-)
+replace github.com/bhainesva/testmodule => github.com/bhainesva/testmodule v0.0.0-20210220042843-67a0e405dfec
+
+require b v0.0.0
